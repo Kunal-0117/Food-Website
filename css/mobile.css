@@ -1,0 +1,71 @@
+/* Navigation bar */
+
+#ham >input, #ham > #hambtn {
+  display: block;
+}
+
+.nav_panel {
+  background-color: rgb(27, 27, 27);
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-duration: 0.4s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+#ham > input:checked ~ .nav_panel {
+  opacity: 0.98;
+  transform: scale(1);
+}
+
+.nav_panel a {
+  font-size: 0rem;
+  margin: 0.3rem;
+}
+
+#ham > input:checked ~ .nav_panel a {
+  font-size: 1.8rem;
+}
+
+
+
+/* Home-Section */
+
+/* Services-Section */
+#services {
+  flex-direction: column;
+}
+
+.service-box {
+  margin:1rem 0.5rem;
+}
+
+.service-box p {
+  text-align: center;
+}
+
+
+/* About-Section */
+#clients > figure {
+  max-width: none;
+}
+
+
+/* Contact-Section */
+
+
+/* footer */
+
+
+
+/* Re-useable classes */
+.boxy {
+  margin: 0px 6px;
+  padding: 5px;
+}
